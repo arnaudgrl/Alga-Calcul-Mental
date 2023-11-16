@@ -1,6 +1,6 @@
 # ALGA - Calcul mental
 
-The primary objective of this repository is to embark on the development journey of an innovative application designed to empower its users in mastering the art of mental calculation. By harnessing the capabilities of this app, individuals can enhance their cognitive abilities, boost mental agility, and refine their mathematical prowess. The ultimate aim is to provide a user-friendly platform that not only facilitates seamless engagement with mental exercises but also fosters a supportive environment for continuous improvement. Through the thoughtful integration of cutting-edge technology, this app aspires to be a valuable companion for those aspiring to excel in mental calculations, fostering a community dedicated to the pursuit of sharper minds and improved cognitive performance. Merci to ChatGPT for this text.
+The main goal of this project is to create an exciting new app that helps people become better at mental math. With this app, you can improve your thinking skills, increase your mental agility, and get better at math. Our aim is to make a user-friendly platform that not only makes it easy to do mental exercises but also encourages continuous improvement. By using the latest technology, we want this app to be a helpful tool for anyone looking to excel in mental math, and we hope it brings together a community of people who want to sharpen their minds and boost their cognitive abilities.
 
 # Other complementary ressources
 
