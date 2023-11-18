@@ -1,0 +1,343 @@
+{
+  "name": "main_page",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "PrzAAo3piEigLVNjqoAlse",
+    "node": "1:21",
+    "version": "4597647058",
+    "component-id": "372fa137c52628332134ddc0eae695efabf9a0d7"
+  },
+  "default": "MainPage",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "Group 1"
+      },
+      {
+        "type": "group",
+        "id": "Frame 1"
+      },
+      {
+        "type": "group",
+        "id": "Frame 2"
+      },
+      {
+        "type": "image",
+        "id": "Mortarboard_light 1"
+      },
+      {
+        "type": "text",
+        "id": "QUICK"
+      },
+      {
+        "type": "text",
+        "id": "Mafs"
+      },
+      {
+        "type": "text",
+        "id": "Start"
+      },
+      {
+        "type": "text",
+        "id": "Parameters"
+      }
+    ],
+    "modes": {
+      "MainPage": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Group 1",
+              "Frame 1",
+              "Frame 2",
+              "Mortarboard_light 1"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.020920502092050253",
+              "value": "0.9372549019607843"
+            }
+          },
+          {
+            "id": "Group 1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "59.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "88.09771728515625"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "241.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "177.9022979736328"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "QUICK",
+              "Mafs"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Frame 1",
+            "padding": "10.0",
+            "border-radius": "50.0",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.24705882352941178",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "42.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "283.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "275.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Start"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.8823529411764706"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "Frame 2",
+            "padding": "10.0",
+            "border-radius": "50.0",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.24705882352941178",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "42.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "382.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "275.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Parameters"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.8823529411764706"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "Mortarboard_light 1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "120.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "53.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "119.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "124.0"
+              }
+            },
+            "image-content": "mortarboard_light_1.png",
+            "scale": "cover"
+          },
+          {
+            "id": "QUICK",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-2.2418594360351562"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "236.5162811279297"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "177.9022979736328"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "QUICK",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "40.0",
+            "line-height": "1.2102272033691406",
+            "typeface": "Inter"
+          },
+          {
+            "id": "Mafs",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "77.34418487548828"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "93.07470703125"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "163.6558074951172"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "50.660919189453125"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Mafs",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "24.0",
+            "line-height": "1.2102272510528564",
+            "typeface": "Inter"
+          },
+          {
+            "id": "Start",
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Start",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "36.0",
+            "line-height": "1.2102272245619032",
+            "typeface": "Inter"
+          },
+          {
+            "id": "Parameters",
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Parameters",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "36.0",
+            "line-height": "1.2102272245619032",
+            "typeface": "Inter"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "MainPage",
+      "size": {
+        "width": 360.0,
+        "height": 800.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
