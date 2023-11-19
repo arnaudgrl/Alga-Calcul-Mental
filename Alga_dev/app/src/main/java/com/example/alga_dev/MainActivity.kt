@@ -3,7 +3,13 @@ package com.example.alga_dev
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -40,7 +46,19 @@ fun AtMainPage(navController: NavController) {
 
 @Composable
 fun AtSettingsPage(navController: NavController) {
-    SettingsPage(goToMainFromSettings = {navController.navigate("mainPage")})
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(Color.Blue),
+        contentAlignment = Alignment.Center
+    ) {
+        SettingsPage(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(Color.Blue),
+            goToMainFromSettings = { navController.navigate("mainPage") }
+        )
+    }
 }
 
 

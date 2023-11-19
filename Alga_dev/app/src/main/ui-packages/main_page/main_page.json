@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "PrzAAo3piEigLVNjqoAlse",
     "node": "1:21",
-    "version": "4619223094",
+    "version": "4639381367",
     "component-id": "372fa137c52628332134ddc0eae695efabf9a0d7"
   },
   "default": "MainPage",
@@ -29,16 +29,16 @@
         "id": "Frame 2"
       },
       {
-        "type": "image",
-        "id": "Mortarboard_light 1"
-      },
-      {
         "type": "text",
         "id": "QUICK"
       },
       {
         "type": "text",
         "id": "Mafs"
+      },
+      {
+        "type": "image",
+        "id": "Mortarboard_light 1"
       },
       {
         "type": "text",
@@ -58,8 +58,7 @@
             "children": [
               "Group 1",
               "Frame 1",
-              "Frame 2",
-              "Mortarboard_light 1"
+              "Frame 2"
             ],
             "background-color": {
               "alpha": "1.0",
@@ -73,11 +72,11 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "59.0"
+                "offset": "74.0"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "88.09771728515625"
+                "offset": "53.0"
               }
             },
             "size-constraints": {
@@ -87,13 +86,14 @@
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
-                "value": "177.9022979736328"
+                "value": "213.00001525878906"
               }
             },
             "is-structured": "false",
             "children": [
               "QUICK",
-              "Mafs"
+              "Mafs",
+              "Mortarboard_light 1"
             ],
             "clip-content": "false"
           },
@@ -116,12 +116,12 @@
             },
             "alignment": {
               "horizontal": {
-                "attachment": "start",
-                "offset": "42.0"
+                "attachment": "center",
+                "offset": "0.0"
               },
               "vertical": {
-                "attachment": "start",
-                "offset": "283.0"
+                "attachment": "center",
+                "offset": "-69.5"
               }
             },
             "tap-handler": "$goToStart",
@@ -166,12 +166,12 @@
             },
             "alignment": {
               "horizontal": {
-                "attachment": "start",
-                "offset": "42.0"
+                "attachment": "center",
+                "offset": "0.0"
               },
               "vertical": {
-                "attachment": "start",
-                "offset": "382.0"
+                "attachment": "center",
+                "offset": "30.5"
               }
             },
             "tap-handler": "$goToSettings",
@@ -198,31 +198,6 @@
             "clip-content": "false"
           },
           {
-            "id": "Mortarboard_light 1",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "120.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "53.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "119.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "124.0"
-              }
-            },
-            "image-content": "mortarboard_light_1.png",
-            "scale": "cover"
-          },
-          {
             "id": "QUICK",
             "alignment": {
               "horizontal": {
@@ -231,7 +206,7 @@
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "0.0"
+                "offset": "35.09771728515625"
               }
             },
             "size-constraints": {
@@ -262,18 +237,18 @@
             "id": "Mafs",
             "alignment": {
               "horizontal": {
-                "attachment": "start",
-                "offset": "77.34418487548828"
+                "attachment": "center",
+                "offset": "38.672096252441406"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "93.07470703125"
+                "offset": "128.17242431640625"
               }
             },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "163.6558074951172"
+                "value": "163.65582275390625"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -293,6 +268,31 @@
             "text-size": "24.0",
             "line-height": "1.2102272510528564",
             "typeface": "Inter"
+          },
+          {
+            "id": "Mortarboard_light 1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "119.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "124.0"
+              }
+            },
+            "image-content": "mortarboard_light_1.png",
+            "scale": "cover"
           },
           {
             "id": "Start",
@@ -346,8 +346,8 @@
     {
       "design": "MainPage",
       "size": {
-        "width": 360.0,
-        "height": 800.0
+        "width": 389.0,
+        "height": 719.0
       }
     }
   ],
