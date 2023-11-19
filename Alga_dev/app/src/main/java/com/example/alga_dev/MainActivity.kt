@@ -55,7 +55,10 @@ fun AtMainPage(navController: NavController) {
 @Composable
 fun AtMenuPage(navController: NavController) {
     GameMenu(
-        goToMainFromMenu = { navController.navigate("mainPage") }
+        goToMainFromMenu = { navController.navigate("mainPage") },
+        modifier = Modifier
+            .fillMaxSize()
+            .background(Color.Blue)
     )
 
 }
@@ -66,7 +69,7 @@ fun AtSettingsPage(navController: NavController) {
         modifier = Modifier
             .fillMaxSize()
             .background(Color.Blue),
-        contentAlignment = Alignment.Center
+        contentAlignment = Alignment.TopCenter
     ) {
         SettingsPage(
             modifier = Modifier

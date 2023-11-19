@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "PrzAAo3piEigLVNjqoAlse",
     "node": "8:51",
-    "version": "4639367575",
+    "version": "4639878186",
     "component-id": "a856ec69c10196361a3147d37db6f31eb524b044"
   },
   "default": "SettingsPage",
@@ -19,27 +19,23 @@
       },
       {
         "type": "group",
-        "id": "top_level_synth"
+        "id": "Group 2"
       },
       {
         "type": "text",
         "id": "Settings"
       },
       {
-        "type": "group",
-        "id": "Arrow_left"
+        "type": "vector",
+        "id": "Rectangle 10"
       },
       {
         "type": "image",
         "id": "Mortarboard_light 1"
       },
       {
-        "type": "vector",
-        "id": "Rectangle 10"
-      },
-      {
-        "type": "vector",
-        "id": "RectangleMain"
+        "type": "group",
+        "id": "Arrow_left"
       },
       {
         "type": "vector",
@@ -64,47 +60,40 @@
               "spread": "0.0",
               "blend-mode": "normal"
             },
-            "stroke-width": "1.0",
-            "stroke-color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.0"
-            },
-            "is-structured": "false",
+            "main-axis-align": "start",
             "children": [
-              "top_level_synth",
-              "Settings",
-              "Arrow_left",
-              "Mortarboard_light 1"
+              "Group 2",
+              "Settings"
             ],
             "background-color": {
               "alpha": "1.0",
               "hue": "0.0",
-              "saturation": "0.0",
-              "value": "1.0"
+              "saturation": "0.020920502092050253",
+              "value": "0.9372549019607843"
             }
           },
           {
-            "id": "top_level_synth",
-            "opacity": "100.0",
+            "id": "Group 2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "54.0"
+              }
+            },
+            "is-structured": "false",
             "children": [
               "Rectangle 10",
-              "RectangleMain"
-            ]
+              "Mortarboard_light 1",
+              "Arrow_left"
+            ],
+            "clip-content": "false"
           },
           {
             "id": "Settings",
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "-0.5"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "70.0"
-              }
-            },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -126,62 +115,8 @@
             "max-lines": "-1",
             "text-align-vertical": "center",
             "text-size": "36.0",
-            "line-height": "1.2102272245619032",
-            "typeface": "Inter"
-          },
-          {
-            "id": "Arrow_left",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "15.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "5.0"
-              }
-            },
-            "tap-handler": "$goToMainFromSettings",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "40.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "40.0"
-              }
-            },
-            "is-structured": "false",
-            "children": [
-              "Vector 9"
-            ],
-            "clip-content": "false"
-          },
-          {
-            "id": "Mortarboard_light 1",
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "-0.5"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "0.0"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "59.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "54.0"
-              }
-            },
-            "image-content": "mortarboard_light_1.png",
-            "scale": "cover"
+            "line-height": "1.2000000211927626",
+            "typeface": "Lato"
           },
           {
             "id": "Rectangle 10",
@@ -198,6 +133,16 @@
               "spread": "0.0",
               "blend-mode": "normal"
             },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "2.0"
+              }
+            },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "proportional",
@@ -211,48 +156,75 @@
             "vector-content": "rectangle_10.svg"
           },
           {
-            "id": "RectangleMain",
-            "drop-shadow": {
-              "color": {
-                "alpha": "0.24705882352941178",
-                "hue": "0.0",
-                "saturation": "0.0",
-                "value": "0.0"
+            "id": "Mortarboard_light 1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-0.0000171661376953125"
               },
-              "blur": "4.0",
-              "offset-x": "0.0",
-              "offset-y": "4.0",
-              "spread": "0.0",
-              "blend-mode": "normal"
+              "vertical": {
+                "attachment": "start",
+                "offset": "0.0"
+              }
             },
             "size-constraints": {
               "width-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
+                "sizing-mode": "fixed",
+                "value": "35.53548812866211"
               },
               "height-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
+                "sizing-mode": "fixed",
+                "value": "54.0"
               }
             },
-            "vector-content": "rectangle_main.svg"
+            "image-content": "mortarboard_light_1.png",
+            "scale": "cover"
+          },
+          {
+            "id": "Arrow_left",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "9.346054077148438"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "6.0"
+              }
+            },
+            "tap-handler": "$goToMainFromSettings",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.09185791015625"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Vector 9"
+            ],
+            "clip-content": "false"
           },
           {
             "id": "Vector 9",
             "margin": {
-              "left": "6.666656494140625",
+              "left": "4.0153045654296875",
               "top": "10.0",
-              "right": "8.333343505859375",
+              "right": "5.0191497802734375",
               "bottom": "10.0"
             },
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "-1.414215087890625"
+                "offset": "-1.1673736572265625"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "-0.70709228515625"
+                "offset": "-0.51593017578125"
               }
             },
             "size-constraints": {
@@ -282,8 +254,8 @@
     {
       "design": "SettingsPage",
       "size": {
-        "width": 568.0,
-        "height": 789.0
+        "width": 406.0,
+        "height": 591.0
       }
     }
   ],

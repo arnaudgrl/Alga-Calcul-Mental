@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "PrzAAo3piEigLVNjqoAlse",
     "node": "1:21",
-    "version": "4639381367",
+    "version": "4639882294",
     "component-id": "372fa137c52628332134ddc0eae695efabf9a0d7"
   },
   "default": "MainPage",
@@ -69,24 +69,14 @@
           },
           {
             "id": "Group 1",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "74.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "53.0"
-              }
-            },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "241.0"
+                "value": "410.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
-                "value": "213.00001525878906"
+                "value": "315.0"
               }
             },
             "is-structured": "false",
@@ -117,11 +107,11 @@
             "alignment": {
               "horizontal": {
                 "attachment": "center",
-                "offset": "0.0"
+                "offset": "-0.5"
               },
               "vertical": {
                 "attachment": "center",
-                "offset": "-69.5"
+                "offset": "-49.5"
               }
             },
             "tap-handler": "$goToStart",
@@ -167,11 +157,11 @@
             "alignment": {
               "horizontal": {
                 "attachment": "center",
-                "offset": "0.0"
+                "offset": "-0.5"
               },
               "vertical": {
                 "attachment": "center",
-                "offset": "30.5"
+                "offset": "62.5"
               }
             },
             "tap-handler": "$goToSettings",
@@ -202,21 +192,21 @@
             "alignment": {
               "horizontal": {
                 "attachment": "center",
-                "offset": "-2.2418594360351562"
+                "offset": "-3.8139495849609375"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "35.09771728515625"
+                "offset": "51.90509033203125"
               }
             },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "236.5162811279297"
+                "value": "402.3721008300781"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
-                "value": "177.9022979736328"
+                "value": "263.0949401855469"
               }
             },
             "color": {
@@ -238,21 +228,21 @@
             "alignment": {
               "horizontal": {
                 "attachment": "center",
-                "offset": "38.672096252441406"
+                "offset": "65.79066467285156"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "128.17242431640625"
+                "offset": "189.55076599121094"
               }
             },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "163.65582275390625"
+                "value": "278.4185791015625"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
-                "value": "50.660919189453125"
+                "value": "74.92107391357422"
               }
             },
             "color": {
@@ -284,11 +274,11 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "119.0"
+                "value": "202.4481201171875"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
-                "value": "124.0"
+                "value": "183.38027954101562"
               }
             },
             "image-content": "mortarboard_light_1.png",
@@ -307,8 +297,8 @@
             "overflow": "visible",
             "text-align-vertical": "center",
             "text-size": "36.0",
-            "line-height": "1.2102272245619032",
-            "typeface": "Inter"
+            "line-height": "1.2000000211927626",
+            "typeface": "Lato"
           },
           {
             "id": "Parameters",
@@ -323,8 +313,8 @@
             "overflow": "visible",
             "text-align-vertical": "center",
             "text-size": "36.0",
-            "line-height": "1.2102272245619032",
-            "typeface": "Inter"
+            "line-height": "1.2000000211927626",
+            "typeface": "Lato"
           }
         ]
       }
@@ -346,8 +336,8 @@
     {
       "design": "MainPage",
       "size": {
-        "width": 389.0,
-        "height": 719.0
+        "width": 410.0,
+        "height": 770.0
       }
     }
   ],

@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "PrzAAo3piEigLVNjqoAlse",
     "node": "17:99",
-    "version": "4639698481",
+    "version": "4639845686",
     "component-id": "e934cebf4be00442a5e9f10afe26a8614184e106"
   },
   "default": "GameMenu",
@@ -15,6 +15,10 @@
         "type": "group",
         "id": "top_level",
         "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "Group 2"
       },
       {
         "type": "text",
@@ -29,12 +33,16 @@
         "id": "Rectangle 10"
       },
       {
+        "type": "image",
+        "id": "Mortarboard_light 1"
+      },
+      {
         "type": "group",
         "id": "Arrow_left"
       },
       {
-        "type": "image",
-        "id": "Mortarboard_light 1"
+        "type": "vector",
+        "id": "Vector 9"
       },
       {
         "type": "vector",
@@ -79,10 +87,6 @@
       {
         "type": "image",
         "id": "PlusAndMinus 1"
-      },
-      {
-        "type": "vector",
-        "id": "Vector 9"
       }
     ],
     "modes": {
@@ -90,14 +94,13 @@
         "rules": [
           {
             "id": "top_level",
-            "is-structured": "false",
+            "main-axis-align": "start",
             "children": [
+              "Group 2",
               "Game modes",
-              "Group 1",
-              "Rectangle 10",
-              "Arrow_left",
-              "Mortarboard_light 1"
+              "Group 1"
             ],
+            "item-spacing": "16.0",
             "background-color": {
               "alpha": "1.0",
               "hue": "0.0",
@@ -106,17 +109,27 @@
             }
           },
           {
-            "id": "Game modes",
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "-6.5"
+            "id": "Group 2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
               },
-              "vertical": {
-                "attachment": "center",
-                "offset": "-301.0"
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "54.0"
               }
             },
+            "is-structured": "false",
+            "children": [
+              "Rectangle 10",
+              "Mortarboard_light 1",
+              "Arrow_left"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Game modes",
             "color": {
               "alpha": "1.0",
               "hue": "0.0",
@@ -127,21 +140,11 @@
             "overflow": "visible",
             "text-align-vertical": "center",
             "text-size": "36.0",
-            "line-height": "1.2102272245619032",
-            "typeface": "Inter"
+            "line-height": "1.2000000211927626",
+            "typeface": "Lato"
           },
           {
             "id": "Group 1",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "17.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "141.0"
-              }
-            },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -177,6 +180,16 @@
               "spread": "0.0",
               "blend-mode": "normal"
             },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "2.0"
+              }
+            },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "proportional",
@@ -190,22 +203,47 @@
             "vector-content": "rectangle_10.svg"
           },
           {
+            "id": "Mortarboard_light 1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-0.0000152587890625"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "51.290130615234375"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "54.0"
+              }
+            },
+            "image-content": "mortarboard_light_1.png",
+            "scale": "cover"
+          },
+          {
             "id": "Arrow_left",
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "7.0"
+                "offset": "13.489608764648438"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "4.0"
+                "offset": "6.0"
               }
             },
             "tap-handler": "$goToMainFromMenu",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "40.0"
+                "value": "34.772972106933594"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -219,29 +257,34 @@
             "clip-content": "false"
           },
           {
-            "id": "Mortarboard_light 1",
+            "id": "Vector 9",
+            "margin": {
+              "left": "5.795501708984375",
+              "top": "10.0",
+              "right": "7.244361877441406",
+              "bottom": "10.0"
+            },
             "alignment": {
               "horizontal": {
-                "attachment": "center",
-                "offset": "-0.5"
+                "attachment": "start",
+                "offset": "-1.325042724609375"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "0.0"
+                "offset": "-0.65606689453125"
               }
             },
             "size-constraints": {
               "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "59.0"
+                "sizing-mode": "proportional",
+                "value": "1.0"
               },
               "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "54.0"
+                "sizing-mode": "proportional",
+                "value": "1.0"
               }
             },
-            "image-content": "mortarboard_light_1.png",
-            "scale": "cover"
+            "vector-content": "vector_9.svg"
           },
           {
             "id": "Rectangle 11",
@@ -537,36 +580,6 @@
             },
             "image-content": "plus_and_minus_1.png",
             "scale": "cover"
-          },
-          {
-            "id": "Vector 9",
-            "margin": {
-              "left": "6.6666717529296875",
-              "top": "10.0",
-              "right": "8.333328247070312",
-              "bottom": "10.0"
-            },
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "-1.414215087890625"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "-0.70709228515625"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              }
-            },
-            "vector-content": "vector_9.svg"
           }
         ]
       }
@@ -603,8 +616,8 @@
     {
       "design": "GameMenu",
       "size": {
-        "width": 382.0,
-        "height": 800.0
+        "width": 586.0,
+        "height": 672.0
       }
     }
   ],
