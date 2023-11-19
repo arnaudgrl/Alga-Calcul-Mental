@@ -14,9 +14,11 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.alga_dev.gamemenu.GameMenu
 import com.example.alga_dev.mainpage.MainPage
 import com.example.alga_dev.settingspage.SettingsPage
 import com.example.alga_dev.ui.theme.Alga_devTheme
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,6 +35,9 @@ class MainActivity : ComponentActivity() {
                     composable("settingsPage") {
                         AtSettingsPage(navController = navController)
                     }
+                    composable("gameMenu") {
+                        AtMenuPage(navController = navController)
+                    }
                 }
             }
         }
@@ -41,7 +46,18 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun AtMainPage(navController: NavController) {
-    MainPage(goToSettings = { navController.navigate("settingsPage") })
+    MainPage(
+        goToSettings = { navController.navigate("settingsPage") },
+        goToStart = { navController.navigate("gameMenu") }
+    )
+}
+
+@Composable
+fun AtMenuPage(navController: NavController) {
+    GameMenu(
+        goToMainFromMenu = { navController.navigate("mainPage") }
+    )
+
 }
 
 @Composable

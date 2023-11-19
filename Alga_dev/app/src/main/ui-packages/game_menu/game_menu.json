@@ -1,0 +1,614 @@
+{
+  "name": "game_menu",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "PrzAAo3piEigLVNjqoAlse",
+    "node": "17:99",
+    "version": "4639698481",
+    "component-id": "e934cebf4be00442a5e9f10afe26a8614184e106"
+  },
+  "default": "GameMenu",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Game modes"
+      },
+      {
+        "type": "group",
+        "id": "Group 1"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 10"
+      },
+      {
+        "type": "group",
+        "id": "Arrow_left"
+      },
+      {
+        "type": "image",
+        "id": "Mortarboard_light 1"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 11"
+      },
+      {
+        "type": "group",
+        "id": "Group challenge"
+      },
+      {
+        "type": "group",
+        "id": "Group percent"
+      },
+      {
+        "type": "group",
+        "id": "Group mult & div"
+      },
+      {
+        "type": "group",
+        "id": "Group add & sub"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle Challenge"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 14"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 13"
+      },
+      {
+        "type": "image",
+        "id": "MultAndDiv 1"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 12"
+      },
+      {
+        "type": "image",
+        "id": "PlusAndMinus 1"
+      },
+      {
+        "type": "vector",
+        "id": "Vector 9"
+      }
+    ],
+    "modes": {
+      "GameMenu": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Game modes",
+              "Group 1",
+              "Rectangle 10",
+              "Arrow_left",
+              "Mortarboard_light 1"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.020920502092050253",
+              "value": "0.9372549019607843"
+            }
+          },
+          {
+            "id": "Game modes",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-6.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-301.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Game modes",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "36.0",
+            "line-height": "1.2102272245619032",
+            "typeface": "Inter"
+          },
+          {
+            "id": "Group 1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "17.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "141.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "346.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "332.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Rectangle 11",
+              "Group challenge",
+              "Group percent",
+              "Group mult & div",
+              "Group add & sub"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Rectangle 10",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.24705882352941178",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "50.0"
+              }
+            },
+            "vector-content": "rectangle_10.svg"
+          },
+          {
+            "id": "Arrow_left",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "7.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "4.0"
+              }
+            },
+            "tap-handler": "$goToMainFromMenu",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Vector 9"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Mortarboard_light 1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-0.5"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "59.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "54.0"
+              }
+            },
+            "image-content": "mortarboard_light_1.png",
+            "scale": "cover"
+          },
+          {
+            "id": "Rectangle 11",
+            "border-radius": "25.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "346.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "332.0"
+              }
+            },
+            "vector-content": "rectangle_11.svg"
+          },
+          {
+            "id": "Group challenge",
+            "border-radius": "25.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "174.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "166.0"
+              }
+            },
+            "tap-handler": "$goToChallenge",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "159.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "149.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Rectangle Challenge"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Group percent",
+            "border-radius": "25.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "13.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "166.0"
+              }
+            },
+            "tap-handler": "$goToPercent",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "154.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "149.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Rectangle 14"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Group mult & div",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "174.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "11.0"
+              }
+            },
+            "tap-handler": "$goToMult",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "159.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "149.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Rectangle 13",
+              "MultAndDiv 1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Group add & sub",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "12.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "11.0"
+              }
+            },
+            "tap-handler": "$goToAdd",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "154.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "149.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Rectangle 12",
+              "PlusAndMinus 1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Rectangle Challenge",
+            "border-radius": "25.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "159.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "149.0"
+              }
+            },
+            "vector-content": "rectangle_challenge.svg"
+          },
+          {
+            "id": "Rectangle 14",
+            "border-radius": "25.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "154.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "149.0"
+              }
+            },
+            "vector-content": "rectangle_14.svg"
+          },
+          {
+            "id": "Rectangle 13",
+            "border-radius": "25.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "159.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "149.0"
+              }
+            },
+            "vector-content": "rectangle_13.svg"
+          },
+          {
+            "id": "MultAndDiv 1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-0.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "115.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "116.0"
+              }
+            },
+            "image-content": "mult_and_div_1.png",
+            "scale": "cover"
+          },
+          {
+            "id": "Rectangle 12",
+            "border-radius": "25.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "154.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "149.0"
+              }
+            },
+            "vector-content": "rectangle_12.svg"
+          },
+          {
+            "id": "PlusAndMinus 1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-0.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "115.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "116.0"
+              }
+            },
+            "image-content": "plus_and_minus_1.png",
+            "scale": "cover"
+          },
+          {
+            "id": "Vector 9",
+            "margin": {
+              "left": "6.6666717529296875",
+              "top": "10.0",
+              "right": "8.333328247070312",
+              "bottom": "10.0"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "-1.414215087890625"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "-0.70709228515625"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "vector_9.svg"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "goToMainFromMenu": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "goToChallenge": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "goToPercent": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "goToMult": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "goToAdd": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "GameMenu",
+      "size": {
+        "width": 382.0,
+        "height": 800.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
