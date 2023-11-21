@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "PrzAAo3piEigLVNjqoAlse",
     "node": "31:352",
-    "version": "4653112065",
+    "version": "4654471579",
     "component-id": "d4400ad435374762cbc1e49ae1af636134da9841"
   },
   "default": "PlayPage",
@@ -19,7 +19,7 @@
       },
       {
         "type": "group",
-        "id": "Group 2"
+        "id": "Frame 1"
       },
       {
         "type": "text",
@@ -32,6 +32,10 @@
       {
         "type": "group",
         "id": "Answers_group"
+      },
+      {
+        "type": "group",
+        "id": "Group 2"
       },
       {
         "type": "vector",
@@ -130,7 +134,7 @@
             },
             "main-axis-align": "start",
             "children": [
-              "Group 2",
+              "Frame 1",
               "89 x 15",
               "Group 5",
               "Answers_group"
@@ -144,7 +148,7 @@
             }
           },
           {
-            "id": "Group 2",
+            "id": "Frame 1",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "proportional",
@@ -157,9 +161,7 @@
             },
             "is-structured": "false",
             "children": [
-              "Rectangle 10",
-              "Mortarboard_light 1",
-              "Arrow_left"
+              "Group 2"
             ],
             "clip-content": "false"
           },
@@ -232,6 +234,26 @@
             "clip-content": "false"
           },
           {
+            "id": "Group 2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "415.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "54.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Rectangle 10",
+              "Mortarboard_light 1",
+              "Arrow_left"
+            ],
+            "clip-content": "false"
+          },
+          {
             "id": "Rectangle 10",
             "drop-shadow": {
               "color": {
@@ -273,7 +295,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "center",
-                "offset": "-0.00002288818359375"
+                "offset": "0.4999961853027344"
               },
               "vertical": {
                 "attachment": "start",
@@ -283,7 +305,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "35.23808288574219"
+                "value": "35.055503845214844"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -298,7 +320,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "9.267837524414062"
+                "offset": "9.219818115234375"
               },
               "vertical": {
                 "attachment": "start",
@@ -309,7 +331,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "23.890228271484375"
+                "value": "23.766441345214844"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -325,19 +347,19 @@
           {
             "id": "Vector 9",
             "margin": {
-              "left": "3.9817047119140625",
+              "left": "3.9610748291015625",
               "top": "10.0",
-              "right": "4.9771270751953125",
+              "right": "4.9513397216796875",
               "bottom": "10.0"
             },
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "-1.1647796630859375"
+                "offset": "-1.1632003784179688"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "-0.51275634765625"
+                "offset": "-0.51080322265625"
               }
             },
             "size-constraints": {
@@ -877,8 +899,8 @@
     {
       "design": "PlayPage",
       "size": {
-        "width": 386.0,
-        "height": 493.0
+        "width": 415.0,
+        "height": 602.0
       },
       "parameters": {
         "question text content": "89 x 15",

@@ -1,14 +1,15 @@
 {
-  "name": "game_menu",
+  "name": "final_score_page",
   "version": 32,
   "source-key": {
     "type": "figma",
     "file": "PrzAAo3piEigLVNjqoAlse",
-    "node": "17:99",
-    "version": "4654391513",
-    "component-id": "e934cebf4be00442a5e9f10afe26a8614184e106"
+    "node": "41:434",
+    "version": "4654957158",
+    "component-id": "cd3406f7fd284c2716dd71d56597d5cf02f42ee2"
   },
-  "default": "GameMenu",
+  "default": "FinalScorePage",
+  "documentation": "SettingsPage",
   "design": {
     "atoms": [
       {
@@ -18,19 +19,19 @@
       },
       {
         "type": "group",
-        "id": "Frame 2"
+        "id": "Group 2"
       },
       {
         "type": "text",
-        "id": "Game modes"
+        "id": "Your Final Score is:"
       },
       {
         "type": "group",
-        "id": "Frame 1"
+        "id": "Group 3"
       },
       {
         "type": "group",
-        "id": "Group 2"
+        "id": "Group 6"
       },
       {
         "type": "vector",
@@ -41,66 +42,63 @@
         "id": "Mortarboard_light 1"
       },
       {
+        "type": "text",
+        "id": "8"
+      },
+      {
+        "type": "image",
+        "id": "image 1"
+      },
+      {
         "type": "group",
-        "id": "Arrow_left"
+        "id": "Group 4"
+      },
+      {
+        "type": "group",
+        "id": "Group 5"
       },
       {
         "type": "vector",
-        "id": "Vector 9"
-      },
-      {
-        "type": "group",
-        "id": "Group Percentage and Fractions:"
-      },
-      {
-        "type": "group",
-        "id": "Group Advanced"
-      },
-      {
-        "type": "group",
-        "id": "Frame Basic"
-      },
-      {
-        "type": "vector",
-        "id": "Rectangle PErcent"
+        "id": "Rectangle 11"
       },
       {
         "type": "text",
-        "id": "Percentage and Fractions"
+        "id": "Retry"
       },
       {
         "type": "vector",
-        "id": "Rectangle Ad"
+        "id": "Rectangle 12"
       },
       {
         "type": "text",
-        "id": "Advanced"
-      },
-      {
-        "type": "group",
-        "id": "Frame Basic_synth"
-      },
-      {
-        "type": "text",
-        "id": "Basic"
-      },
-      {
-        "type": "vector",
-        "id": "Rectangle Basic"
+        "id": "Menu"
       }
     ],
     "modes": {
-      "GameMenu": {
+      "FinalScorePage": {
         "rules": [
           {
             "id": "top_level",
-            "main-axis-align": "start",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.24705882352941178",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "is-structured": "false",
             "children": [
-              "Frame 2",
-              "Game modes",
-              "Frame 1"
+              "Group 2",
+              "Your Final Score is:",
+              "Group 3",
+              "Group 6"
             ],
-            "item-spacing": "22.0",
             "background-color": {
               "alpha": "1.0",
               "hue": "0.0",
@@ -109,74 +107,11 @@
             }
           },
           {
-            "id": "Frame 2",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "54.0"
-              }
-            },
-            "is-structured": "false",
-            "children": [
-              "Group 2"
-            ],
-            "clip-content": "false"
-          },
-          {
-            "id": "Game modes",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "shrink"
-              }
-            },
-            "color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.0"
-            },
-            "text-content": "Game modes",
-            "overflow": "visible",
-            "max-lines": "-1",
-            "text-align-vertical": "center",
-            "text-size": "40.0",
-            "line-height": "1.2",
-            "typeface": "Lato"
-          },
-          {
-            "id": "Frame 1",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "246.0"
-              }
-            },
-            "is-structured": "false",
-            "children": [
-              "Group Percentage and Fractions:",
-              "Group Advanced",
-              "Frame Basic"
-            ],
-            "clip-content": "false"
-          },
-          {
             "id": "Group 2",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "400.0"
+                "value": "324.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -186,8 +121,102 @@
             "is-structured": "false",
             "children": [
               "Rectangle 10",
-              "Mortarboard_light 1",
-              "Arrow_left"
+              "Mortarboard_light 1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Your Final Score is:",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-0.5"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "91.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "211.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "70.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Your Final Score is:",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "36.0",
+            "line-height": "1.2000000211927626",
+            "typeface": "Lato"
+          },
+          {
+            "id": "Group 3",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "16.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "157.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "128.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "106.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "8",
+              "image 1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Group 6",
+            "border-radius": "20.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "18.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "353.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "287.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "56.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Group 4",
+              "Group 5"
             ],
             "clip-content": "false"
           },
@@ -233,7 +262,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "center",
-                "offset": "0.5192909240722656"
+                "offset": "-0.5889072418212891"
               },
               "vertical": {
                 "attachment": "start",
@@ -243,7 +272,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "35.996742248535156"
+                "value": "32.82218551635742"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -254,196 +283,7 @@
             "scale": "cover"
           },
           {
-            "id": "Arrow_left",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "9.46734619140625"
-              },
-              "vertical": {
-                "attachment": "center",
-                "offset": "-1.0"
-              }
-            },
-            "tap-handler": "$goToMainFromMenu",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "24.404571533203125"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "40.0"
-              }
-            },
-            "is-structured": "false",
-            "children": [
-              "Vector 9"
-            ],
-            "clip-content": "false"
-          },
-          {
-            "id": "Vector 9",
-            "margin": {
-              "left": "4.0674285888671875",
-              "top": "10.0",
-              "right": "5.08428955078125",
-              "bottom": "10.0"
-            },
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "-1.1714324951171875"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "-0.520843505859375"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              }
-            },
-            "vector-content": "vector_9.svg"
-          },
-          {
-            "id": "Group Percentage and Fractions:",
-            "border-radius": "15.0",
-            "drop-shadow": {
-              "color": {
-                "alpha": "0.24705882352941178",
-                "hue": "0.0",
-                "saturation": "0.0",
-                "value": "0.0"
-              },
-              "blur": "4.0",
-              "offset-x": "0.0",
-              "offset-y": "4.0",
-              "spread": "0.0",
-              "blend-mode": "normal"
-            },
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "-0.5"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "179.0"
-              }
-            },
-            "tap-handler": "$goToPercent",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "325.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "67.0"
-              }
-            },
-            "is-structured": "false",
-            "children": [
-              "Rectangle PErcent",
-              "Percentage and Fractions"
-            ],
-            "clip-content": "false"
-          },
-          {
-            "id": "Group Advanced",
-            "border-radius": "15.0",
-            "drop-shadow": {
-              "color": {
-                "alpha": "0.24705882352941178",
-                "hue": "0.0",
-                "saturation": "0.0",
-                "value": "0.0"
-              },
-              "blur": "4.0",
-              "offset-x": "0.0",
-              "offset-y": "4.0",
-              "spread": "0.0",
-              "blend-mode": "normal"
-            },
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "-0.5"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "88.0"
-              }
-            },
-            "tap-handler": "$goToAdvanced",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "325.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "67.0"
-              }
-            },
-            "is-structured": "false",
-            "children": [
-              "Rectangle Ad",
-              "Advanced"
-            ],
-            "clip-content": "false"
-          },
-          {
-            "id": "Frame Basic",
-            "drop-shadow": {
-              "color": {
-                "alpha": "0.24705882352941178",
-                "hue": "0.0",
-                "saturation": "0.0",
-                "value": "0.0"
-              },
-              "blur": "4.0",
-              "offset-x": "0.0",
-              "offset-y": "4.0",
-              "spread": "0.0",
-              "blend-mode": "normal"
-            },
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "-0.5"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "0.0"
-              }
-            },
-            "tap-handler": "$goToBasic",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "shrink"
-              },
-              "height-constraints": {
-                "sizing-mode": "shrink"
-              }
-            },
-            "is-structured": "false",
-            "children": [
-              "Frame Basic_synth",
-              "Basic"
-            ],
-            "clip-content": "false"
-          },
-          {
-            "id": "Rectangle PErcent",
-            "border-radius": "15.0",
+            "id": "8",
             "alignment": {
               "horizontal": {
                 "attachment": "center",
@@ -457,48 +297,33 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "325.0"
+                "value": "128.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
-                "value": "67.0"
+                "value": "106.0"
               }
             },
-            "vector-content": "rectangle_percent.svg"
-          },
-          {
-            "id": "Percentage and Fractions",
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "-1.0"
-              },
-              "vertical": {
-                "attachment": "center",
-                "offset": "0.0"
-              }
-            },
-            "font-weight": "600.0",
             "color": {
               "alpha": "1.0",
               "hue": "0.0",
               "saturation": "0.0",
               "value": "0.0"
             },
-            "text-content": "Percentage and Fractions",
+            "text-content": "$score text content",
             "overflow": "visible",
+            "max-lines": "-1",
             "text-align-vertical": "center",
-            "text-size": "24.0",
+            "text-size": "48.0",
             "line-height": "1.2000000476837158",
             "typeface": "Lato"
           },
           {
-            "id": "Rectangle Ad",
-            "border-radius": "15.0",
+            "id": "image 1",
             "alignment": {
               "horizontal": {
                 "attachment": "center",
-                "offset": "0.0"
+                "offset": "-42.5"
               },
               "vertical": {
                 "attachment": "center",
@@ -508,120 +333,184 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "325.0"
+                "value": "43.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
-                "value": "67.0"
+                "value": "46.0"
               }
             },
-            "vector-content": "rectangle_ad.svg"
+            "image-content": "image_1.png",
+            "scale": "cover"
           },
           {
-            "id": "Advanced",
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "1.0"
-              },
-              "vertical": {
-                "attachment": "center",
-                "offset": "0.0"
-              }
-            },
-            "font-weight": "600.0",
-            "color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.0"
-            },
-            "text-content": "Advanced",
-            "overflow": "visible",
-            "text-align-vertical": "center",
-            "text-size": "24.0",
-            "line-height": "1.2000000476837158",
-            "typeface": "Lato"
-          },
-          {
-            "id": "Frame Basic_synth",
-            "opacity": "100.0",
+            "id": "Group 4",
+            "border-radius": "20.0",
+            "tap-handler": "$retryTapped",
             "size-constraints": {
               "width-constraints": {
-                "sizing-mode": "shrink"
+                "sizing-mode": "fixed",
+                "value": "117.0"
               },
               "height-constraints": {
-                "sizing-mode": "shrink"
+                "sizing-mode": "fixed",
+                "value": "56.0"
               }
             },
+            "is-structured": "false",
             "children": [
-              "Rectangle Basic"
+              "Rectangle 11",
+              "Retry"
             ],
-            "item-spacing": "10.0",
             "clip-content": "false"
           },
           {
-            "id": "Basic",
+            "id": "Group 5",
+            "border-radius": "20.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "170.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "0.0"
+              }
+            },
+            "tap-handler": "$returnToMenu",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "117.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "56.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Rectangle 12",
+              "Menu"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Rectangle 11",
+            "border-radius": "20.0",
             "alignment": {
               "horizontal": {
                 "attachment": "center",
-                "offset": "1.0"
+                "offset": "0.0"
               },
               "vertical": {
                 "attachment": "center",
                 "offset": "0.0"
               }
             },
-            "font-weight": "600.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "117.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "56.0"
+              }
+            },
+            "vector-content": "rectangle_11.svg"
+          },
+          {
+            "id": "Retry",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-4.5"
+              }
+            },
             "color": {
               "alpha": "1.0",
               "hue": "0.0",
               "saturation": "0.0",
               "value": "0.0"
             },
-            "text-content": "Basic",
+            "text-content": "Retry",
             "overflow": "visible",
             "text-align-vertical": "center",
-            "text-size": "24.0",
-            "line-height": "1.2000000476837158",
+            "text-size": "36.0",
+            "line-height": "1.2000000211927626",
             "typeface": "Lato"
           },
           {
-            "id": "Rectangle Basic",
-            "border-radius": "15.0",
+            "id": "Rectangle 12",
+            "border-radius": "20.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "319.0"
+                "value": "117.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
-                "value": "67.0"
+                "value": "56.0"
               }
             },
-            "vector-content": "rectangle_basic.svg"
+            "vector-content": "rectangle_12.svg"
+          },
+          {
+            "id": "Menu",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "-4.5"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Menu",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "36.0",
+            "line-height": "1.2000000211927626",
+            "typeface": "Lato"
           }
         ]
       }
     }
   },
   "parameters": {
-    "goToMainFromMenu": {
+    "score text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "retryTapped": {
       "data-type": "void-callback",
       "required": false,
       "description": ""
     },
-    "goToPercent": {
-      "data-type": "void-callback",
-      "required": false,
-      "description": ""
-    },
-    "goToAdvanced": {
-      "data-type": "void-callback",
-      "required": false,
-      "description": ""
-    },
-    "goToBasic": {
+    "returnToMenu": {
       "data-type": "void-callback",
       "required": false,
       "description": ""
@@ -629,10 +518,13 @@
   },
   "previews": [
     {
-      "design": "GameMenu",
+      "design": "FinalScorePage",
       "size": {
-        "width": 400.0,
-        "height": 555.0
+        "width": 324.0,
+        "height": 419.0
+      },
+      "parameters": {
+        "score text content": "8"
       }
     }
   ],

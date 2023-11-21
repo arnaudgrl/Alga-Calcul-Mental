@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
@@ -19,6 +20,7 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.alga_dev.finalscorepage.FinalScorePage
 import com.example.alga_dev.gamemenu.GameMenu
 import com.example.alga_dev.mainpage.MainPage
 import com.example.alga_dev.playpage.PlayPage
@@ -47,8 +49,23 @@ class MainActivity : ComponentActivity() {
                     composable("gameMenu") {
                         AtMenuPage(navController = navController)
                     }
-                    composable("playGame") {
-                        PlayingGamePage(navController = navController)
+                    composable("playGameBasic") {
+                        PlayingGamePage(navController = navController, gameMode=GameMode.Basic)
+                    }
+                    composable("playGameAdvanced") {
+                        PlayingGamePage(navController = navController, gameMode=GameMode.Advanced)
+                    }
+                    composable("playGamePercent") {
+                        PlayingGamePage(navController = navController, gameMode=GameMode.Percent)
+                    }
+                    composable("finalScoreBasic") {
+                        FinalScore(navController = navController, gameMode=GameMode.Basic)
+                    }
+                    composable("finalScoreAdvanced") {
+                        FinalScore(navController = navController, gameMode=GameMode.Advanced)
+                    }
+                    composable("finalScorePercent") {
+                        FinalScore(navController = navController, gameMode=GameMode.Percent)
                     }
                 }
             }
@@ -57,18 +74,52 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun PlayingGamePage(navController: NavController) {
-    var questionState by remember { mutableStateOf(generateRandomQuestion()) }
-    var answersState by remember { mutableStateOf(generateRandomAnswers(questionState.answer)) }
+fun FinalScore(navController: NavController, gameMode: GameMode) {
+    FinalScorePage(
+        retryTapped = {
+            when (gameMode) {
+                GameMode.Basic -> {
+                    navController.navigate("playGameBasic")
+                }
+                GameMode.Advanced -> {
+                    navController.navigate("playGameAdvanced")
+                }
+                GameMode.Percent -> {
+                    navController.navigate("playGamePercent")
+                }
+            }
+        },
+        returnToMenu = { navController.navigate("gameMenu") }
+    )
+}
 
-    var score by remember { mutableStateOf(0) }
-    var timer by remember { mutableStateOf(0) }
+@Composable
+fun PlayingGamePage(navController: NavController, gameMode: GameMode) {
+    var questionState by remember {
+        mutableStateOf(generateRandomQuestion(gameMode))
+    }
+    var answersState by remember {
+        mutableStateOf(generateRandomAnswers(questionState.answer))
+    }
 
-    // LaunchedEffect to increment timer every second
+    var score by remember { mutableIntStateOf(0) }
+    var timer by remember { mutableIntStateOf(5) }
+
     LaunchedEffect(timer) {
-        while (true) {
+        while (timer>0) {
             delay(1000)
-            timer++
+            timer--
+        }
+        when (gameMode) {
+            GameMode.Basic -> {
+                navController.navigate("finalScoreBasic")
+            }
+            GameMode.Advanced -> {
+                navController.navigate("finalScoreAdvanced")
+            }
+            GameMode.Percent -> {
+                navController.navigate("finalScorePercent")
+            }
         }
     }
 
@@ -83,49 +134,71 @@ fun PlayingGamePage(navController: NavController) {
             if (answersState[0] == questionState.answer.toString()) {
                 score++
             }
-            questionState = generateRandomQuestion()
+            questionState = generateRandomQuestion(gameMode)
             answersState = generateRandomAnswers(questionState.answer)
         },
         secondPropositionTapped = {
             if (answersState[1] == questionState.answer.toString()) {
                 score++
             }
-            questionState = generateRandomQuestion()
+            questionState = generateRandomQuestion(gameMode)
             answersState = generateRandomAnswers(questionState.answer)
         },
         thirdPropositionTapped = {
             if (answersState[2] == questionState.answer.toString()) {
                 score++
             }
-            questionState = generateRandomQuestion()
+            questionState = generateRandomQuestion(gameMode)
             answersState = generateRandomAnswers(questionState.answer)
         },
         fourthPropositionTapped = {
             if (answersState[3] == questionState.answer.toString()) {
                 score++
             }
-            questionState = generateRandomQuestion()
+            questionState = generateRandomQuestion(gameMode)
             answersState = generateRandomAnswers(questionState.answer)
         },
         scoreTextContent = "$score",
-        timeTextContent = "${formatTime(timer)}"
+        timeTextContent = formatTime(timer)
     )
+}
+
+sealed class GameMode {
+    object Basic : GameMode()
+    object Advanced : GameMode()
+    object Percent : GameMode()
 }
 data class QuestionState(val question: String, val answer: Int)
 
-// Function to format time in MM:SS format
-fun formatTime(seconds: Int): String {
-    val minutes = seconds / 60
-    val remainingSeconds = seconds % 60
-    val df = DecimalFormat("00")
-    return "${df.format(minutes)}:${df.format(remainingSeconds)}"
+fun generateRandomQuestion(gameMode: GameMode): QuestionState {
+    return when (gameMode) {
+        is GameMode.Basic -> generateBasicQuestion()
+        is GameMode.Advanced -> generateAdvancedQuestion()
+        is GameMode.Percent -> generatePercentQuestion()
+    }
 }
 
-fun generateRandomQuestion(): QuestionState {
+fun generateBasicQuestion(): QuestionState {
     val operand1 = Random.nextInt(1, 21)
     val operand2 = Random.nextInt(1, 21)
     val question = "$operand1 x $operand2"
     val answer = operand1 * operand2
+    return QuestionState(question, answer)
+}
+
+fun generateAdvancedQuestion(): QuestionState {
+    val operand1 = Random.nextInt(1, 21)
+    val operand2 = Random.nextInt(1, 21)
+    val question = "$operand1 / $operand2"
+    val answer = operand1 / operand2
+    return QuestionState(question, answer)
+}
+
+fun generatePercentQuestion(): QuestionState {
+    val operand1 = Random.nextInt(1, 21)
+    val operand2 = Random.nextInt(1, 21)
+    val question = "$operand1 % $operand2"
+    val answer = operand1 % operand2
     return QuestionState(question, answer)
 }
 
@@ -143,6 +216,14 @@ fun generateRandomAnswers(correctAnswer: Int): List<String> {
     return answers.shuffled()
 }
 
+// Function to format time in MM:SS format
+fun formatTime(seconds: Int): String {
+    val minutes = seconds / 60
+    val remainingSeconds = seconds % 60
+    val df = DecimalFormat("00")
+    return "${df.format(minutes)}:${df.format(remainingSeconds)}"
+}
+
 @Composable
 fun AtMainPage(navController: NavController) {
     MainPage(
@@ -155,7 +236,9 @@ fun AtMainPage(navController: NavController) {
 fun AtMenuPage(navController: NavController) {
     GameMenu(
         goToMainFromMenu = { navController.navigate("mainPage") },
-        goToAdd = { navController.navigate("playGame") },
+        goToBasic = { navController.navigate("playGameBasic") },
+        goToAdvanced = { navController.navigate("playGameAdvanced") },
+        goToPercent = {  navController.navigate("playGamePercent") },
         modifier = Modifier
             .fillMaxSize()
             .background(Color.Blue)
