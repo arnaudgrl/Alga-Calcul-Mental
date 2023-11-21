@@ -1,0 +1,897 @@
+{
+  "name": "play_page",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "PrzAAo3piEigLVNjqoAlse",
+    "node": "31:352",
+    "version": "4653112065",
+    "component-id": "d4400ad435374762cbc1e49ae1af636134da9841"
+  },
+  "default": "PlayPage",
+  "documentation": "SettingsPage",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "Group 2"
+      },
+      {
+        "type": "text",
+        "id": "89 x 15"
+      },
+      {
+        "type": "group",
+        "id": "Group 5"
+      },
+      {
+        "type": "group",
+        "id": "Answers_group"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 10"
+      },
+      {
+        "type": "image",
+        "id": "Mortarboard_light 1"
+      },
+      {
+        "type": "group",
+        "id": "Arrow_left"
+      },
+      {
+        "type": "vector",
+        "id": "Vector 9"
+      },
+      {
+        "type": "text",
+        "id": "8"
+      },
+      {
+        "type": "image",
+        "id": "image 1"
+      },
+      {
+        "type": "text",
+        "id": "00:32"
+      },
+      {
+        "type": "group",
+        "id": "SecondProposition"
+      },
+      {
+        "type": "group",
+        "id": "FourthProposition"
+      },
+      {
+        "type": "group",
+        "id": "ThirdProposition"
+      },
+      {
+        "type": "group",
+        "id": "FirstProposition"
+      },
+      {
+        "type": "vector",
+        "id": "R2"
+      },
+      {
+        "type": "text",
+        "id": "2"
+      },
+      {
+        "type": "vector",
+        "id": "R4"
+      },
+      {
+        "type": "text",
+        "id": "4"
+      },
+      {
+        "type": "vector",
+        "id": "R3"
+      },
+      {
+        "type": "text",
+        "id": "3"
+      },
+      {
+        "type": "vector",
+        "id": "R1"
+      },
+      {
+        "type": "text",
+        "id": "1"
+      }
+    ],
+    "modes": {
+      "PlayPage": {
+        "rules": [
+          {
+            "id": "top_level",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.24705882352941178",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "main-axis-align": "start",
+            "children": [
+              "Group 2",
+              "89 x 15",
+              "Group 5",
+              "Answers_group"
+            ],
+            "item-spacing": "11.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.020920502092050253",
+              "value": "0.9372549019607843"
+            }
+          },
+          {
+            "id": "Group 2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "54.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Rectangle 10",
+              "Mortarboard_light 1",
+              "Arrow_left"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "89 x 15",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "300.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "82.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$question text content",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "52.0",
+            "line-height": "1.200000029343825",
+            "typeface": "Lato"
+          },
+          {
+            "id": "Group 5",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "299.5"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "43.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "8",
+              "image 1",
+              "00:32"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Answers_group",
+            "border-radius": "20.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "331.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "253.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "SecondProposition",
+              "FourthProposition",
+              "ThirdProposition",
+              "FirstProposition"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Rectangle 10",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.24705882352941178",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "2.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "50.0"
+              }
+            },
+            "vector-content": "rectangle_10.svg"
+          },
+          {
+            "id": "Mortarboard_light 1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-0.00002288818359375"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "35.23808288574219"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "54.0"
+              }
+            },
+            "image-content": "mortarboard_light_1.png",
+            "scale": "cover"
+          },
+          {
+            "id": "Arrow_left",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "9.267837524414062"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "6.0"
+              }
+            },
+            "tap-handler": "$goToMainFromGame",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "23.890228271484375"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Vector 9"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Vector 9",
+            "margin": {
+              "left": "3.9817047119140625",
+              "top": "10.0",
+              "right": "4.9771270751953125",
+              "bottom": "10.0"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "-1.1647796630859375"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "-0.51275634765625"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "vector_9.svg"
+          },
+          {
+            "id": "8",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.5"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "54.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "43.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$score text content",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "18.0",
+            "line-height": "1.2102272245619032",
+            "typeface": "Inter"
+          },
+          {
+            "id": "image 1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "10.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "18.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "19.0"
+              }
+            },
+            "image-content": "image_1.png",
+            "scale": "cover"
+          },
+          {
+            "id": "00:32",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "214.5"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "85.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "43.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$time text content",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "18.0",
+            "line-height": "1.2102272245619032",
+            "typeface": "Inter"
+          },
+          {
+            "id": "SecondProposition",
+            "border-radius": "20.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "176.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "0.0"
+              }
+            },
+            "tap-handler": "$SecondPropositionTapped",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "154.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "114.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "R2",
+              "2"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "FourthProposition",
+            "border-radius": "20.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "177.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "139.0"
+              }
+            },
+            "tap-handler": "$FourthPropositionTapped",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "154.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "114.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "R4",
+              "4"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "ThirdProposition",
+            "border-radius": "20.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "135.0"
+              }
+            },
+            "tap-handler": "$ThirdPropositionTapped",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "154.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "114.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "R3",
+              "3"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "FirstProposition",
+            "border-radius": "20.0",
+            "tap-handler": "$FirstPropositionTapped",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "154.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "114.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "R1",
+              "1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "R2",
+            "border-radius": "20.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-4.0"
+              },
+              "vertical": {
+                "attachment": "end",
+                "offset": "-4.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "150.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "110.0"
+              }
+            },
+            "vector-content": "r2.svg"
+          },
+          {
+            "id": "2",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "end",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "154.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "114.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$2 text content",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "36.0",
+            "line-height": "1.2102272245619032",
+            "typeface": "Inter"
+          },
+          {
+            "id": "R4",
+            "border-radius": "20.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-4.0"
+              },
+              "vertical": {
+                "attachment": "end",
+                "offset": "-4.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "150.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "110.0"
+              }
+            },
+            "vector-content": "r4.svg"
+          },
+          {
+            "id": "4",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "end",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "154.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "114.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$4 text content",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "36.0",
+            "line-height": "1.2102272245619032",
+            "typeface": "Inter"
+          },
+          {
+            "id": "R3",
+            "border-radius": "20.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-4.0"
+              },
+              "vertical": {
+                "attachment": "end",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "150.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "110.0"
+              }
+            },
+            "vector-content": "r3.svg"
+          },
+          {
+            "id": "3",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "end",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "154.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "114.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$3 text content",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "36.0",
+            "line-height": "1.2000000211927626",
+            "typeface": "Lato"
+          },
+          {
+            "id": "R1",
+            "border-radius": "20.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-6.0"
+              },
+              "vertical": {
+                "attachment": "end",
+                "offset": "-2.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "150.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "110.0"
+              }
+            },
+            "vector-content": "r1.svg"
+          },
+          {
+            "id": "1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "end",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "154.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "114.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$1 text content",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "36.0",
+            "line-height": "1.2000000211927626",
+            "typeface": "Lato"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "question text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "goToMainFromGame": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "score text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "time text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "SecondPropositionTapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "FourthPropositionTapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "ThirdPropositionTapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "FirstPropositionTapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "2 text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "4 text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "3 text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "1 text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "PlayPage",
+      "size": {
+        "width": 386.0,
+        "height": 493.0
+      },
+      "parameters": {
+        "question text content": "89 x 15",
+        "score text content": "8",
+        "time text content": "00:32",
+        "2 text content": "2",
+        "4 text content": "4",
+        "3 text content": "3",
+        "1 text content": "1"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
