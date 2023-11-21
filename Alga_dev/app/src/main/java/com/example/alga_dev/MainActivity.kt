@@ -17,9 +17,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.navigation.NavController
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
 import com.example.alga_dev.finalscorepage.FinalScorePage
 import com.example.alga_dev.gamemenu.GameMenu
 import com.example.alga_dev.mainpage.MainPage
@@ -58,14 +60,17 @@ class MainActivity : ComponentActivity() {
                     composable("playGamePercent") {
                         PlayingGamePage(navController = navController, gameMode=GameMode.Percent)
                     }
-                    composable("finalScoreBasic") {
-                        FinalScore(navController = navController, gameMode=GameMode.Basic)
+                    composable("finalScoreBasic/{score}", arguments = listOf(navArgument("score") { type = NavType.IntType })){ backStackEntry ->
+                        val score = backStackEntry.arguments?.getInt("score") ?: 0
+                        FinalScore(navController = navController, gameMode=GameMode.Basic, score=score)
                     }
-                    composable("finalScoreAdvanced") {
-                        FinalScore(navController = navController, gameMode=GameMode.Advanced)
+                    composable("finalScoreAdvanced/{score}", arguments = listOf(navArgument("score") { type = NavType.IntType })){ backStackEntry ->
+                        val score = backStackEntry.arguments?.getInt("score") ?: 0
+                        FinalScore(navController = navController, gameMode=GameMode.Advanced, score=score)
                     }
-                    composable("finalScorePercent") {
-                        FinalScore(navController = navController, gameMode=GameMode.Percent)
+                    composable("finalScorePercent/{score}", arguments = listOf(navArgument("score") { type = NavType.IntType })){ backStackEntry ->
+                        val score = backStackEntry.arguments?.getInt("score") ?: 0
+                        FinalScore(navController = navController, gameMode=GameMode.Percent, score=score)
                     }
                 }
             }
@@ -74,8 +79,9 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun FinalScore(navController: NavController, gameMode: GameMode) {
+fun FinalScore(navController: NavController, gameMode: GameMode, score: Int) {
     FinalScorePage(
+        scoreTextContent = score.toString(),
         retryTapped = {
             when (gameMode) {
                 GameMode.Basic -> {
@@ -112,13 +118,28 @@ fun PlayingGamePage(navController: NavController, gameMode: GameMode) {
         }
         when (gameMode) {
             GameMode.Basic -> {
-                navController.navigate("finalScoreBasic")
+                navController.navigate("finalScoreBasic/$score") {
+                    launchSingleTop = true
+                    popUpTo("playGame") {
+                        inclusive = false
+                    }
+                }
             }
             GameMode.Advanced -> {
-                navController.navigate("finalScoreAdvanced")
+                navController.navigate("finalScoreAdvanced/$score") {
+                    launchSingleTop = true
+                    popUpTo("playGame") {
+                        inclusive = false
+                    }
+                }
             }
             GameMode.Percent -> {
-                navController.navigate("finalScorePercent")
+                navController.navigate("finalScorePercent/$score") {
+                    launchSingleTop = true
+                    popUpTo("playGame") {
+                        inclusive = false
+                    }
+                }
             }
         }
     }

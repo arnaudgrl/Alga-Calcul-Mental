@@ -4,9 +4,9 @@
   "source-key": {
     "type": "figma",
     "file": "PrzAAo3piEigLVNjqoAlse",
-    "node": "41:434",
-    "version": "4654957158",
-    "component-id": "cd3406f7fd284c2716dd71d56597d5cf02f42ee2"
+    "node": "44:509",
+    "version": "4656319149",
+    "component-id": "1262d9f3544639bcc2ff4b66119d36874eea3674"
   },
   "default": "FinalScorePage",
   "documentation": "SettingsPage",
@@ -19,7 +19,7 @@
       },
       {
         "type": "group",
-        "id": "Group 2"
+        "id": "Frame 1"
       },
       {
         "type": "text",
@@ -27,11 +27,15 @@
       },
       {
         "type": "group",
-        "id": "Group 3"
+        "id": "Group Fire"
       },
       {
         "type": "group",
-        "id": "Group 6"
+        "id": "Frame 8"
+      },
+      {
+        "type": "group",
+        "id": "Group 2"
       },
       {
         "type": "vector",
@@ -79,6 +83,9 @@
         "rules": [
           {
             "id": "top_level",
+            "padding": {
+              "bottom": "19.0"
+            },
             "drop-shadow": {
               "color": {
                 "alpha": "0.24705882352941178",
@@ -92,12 +99,12 @@
               "spread": "0.0",
               "blend-mode": "normal"
             },
-            "is-structured": "false",
+            "main-axis-align": "space-between",
             "children": [
-              "Group 2",
+              "Frame 1",
               "Your Final Score is:",
-              "Group 3",
-              "Group 6"
+              "Group Fire",
+              "Frame 8"
             ],
             "background-color": {
               "alpha": "1.0",
@@ -107,11 +114,11 @@
             }
           },
           {
-            "id": "Group 2",
+            "id": "Frame 1",
             "size-constraints": {
               "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "324.0"
+                "sizing-mode": "proportional",
+                "value": "1.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -120,27 +127,16 @@
             },
             "is-structured": "false",
             "children": [
-              "Rectangle 10",
-              "Mortarboard_light 1"
+              "Group 2"
             ],
             "clip-content": "false"
           },
           {
             "id": "Your Final Score is:",
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "-0.5"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "91.0"
-              }
-            },
             "size-constraints": {
               "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "211.0"
+                "sizing-mode": "proportional",
+                "value": "1.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -162,17 +158,7 @@
             "typeface": "Lato"
           },
           {
-            "id": "Group 3",
-            "alignment": {
-              "horizontal": {
-                "attachment": "center",
-                "offset": "16.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "157.0"
-              }
-            },
+            "id": "Group Fire",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -191,18 +177,7 @@
             "clip-content": "false"
           },
           {
-            "id": "Group 6",
-            "border-radius": "20.0",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "18.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "353.0"
-              }
-            },
+            "id": "Frame 8",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -210,13 +185,32 @@
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
-                "value": "56.0"
+                "value": "116.0"
               }
             },
             "is-structured": "false",
             "children": [
               "Group 4",
               "Group 5"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Group 2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "394.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "54.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Rectangle 10",
+              "Mortarboard_light 1"
             ],
             "clip-content": "false"
           },
@@ -262,7 +256,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "center",
-                "offset": "-0.5889072418212891"
+                "offset": "-0.4722480773925781"
               },
               "vertical": {
                 "attachment": "start",
@@ -272,7 +266,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "32.82218551635742"
+                "value": "35.055503845214844"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -346,6 +340,29 @@
           {
             "id": "Group 4",
             "border-radius": "20.0",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.24705882352941178",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "30.0"
+              }
+            },
             "tap-handler": "$retryTapped",
             "size-constraints": {
               "width-constraints": {
@@ -374,7 +391,7 @@
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "0.0"
+                "offset": "30.0"
               }
             },
             "tap-handler": "$returnToMenu",
@@ -448,10 +465,23 @@
           {
             "id": "Rectangle 12",
             "border-radius": "20.0",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.24705882352941178",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
             "alignment": {
               "horizontal": {
                 "attachment": "center",
-                "offset": "0.0"
+                "offset": "-4.0"
               },
               "vertical": {
                 "attachment": "center",
@@ -520,8 +550,8 @@
     {
       "design": "FinalScorePage",
       "size": {
-        "width": 324.0,
-        "height": 419.0
+        "width": 394.0,
+        "height": 655.0
       },
       "parameters": {
         "score text content": "8"
