@@ -94,9 +94,8 @@ fun FinalScore(navController: NavController, gameMode: GameMode, score: Int) {
                     navController.navigate("playGamePercent")
                 }
             }
-        },
-        returnToMenu = { navController.navigate("gameMenu") }
-    )
+        }
+    ) { navController.navigate("gameMenu") }
 }
 
 @Composable
